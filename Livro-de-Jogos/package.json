@@ -1,0 +1,39 @@
+{
+  "name": "livro-de-jogos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^6.0.13",
+    "@react-navigation/native-stack": "^6.9.1",
+    "@react-navigation/stack": "^6.3.2",
+    "expo": "~46.0.16",
+    "expo-asset": "~8.6.1",
+    "expo-file-system": "~14.1.0",
+    "expo-splash-screen": "~0.16.2",
+    "expo-sqlite": "^10.3.0",
+    "expo-status-bar": "~1.4.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-native": "0.69.6",
+    "react-native-dropdown-select-list": "^1.0.23",
+    "react-native-safe-area-context": "4.3.1",
+    "react-native-screens": "~3.15.0",
+    "react-native-select-dropdown": "^3.0.1",
+    "react-native-sqlite-storage": "^6.0.1",
+    "react-native-web": "~0.18.7",
+    "sqlite": "^4.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@types/react": "~18.0.0",
+    "@types/react-native": "~0.69.1",
+    "typescript": "^4.6.3"
+  },
+  "private": true
+}

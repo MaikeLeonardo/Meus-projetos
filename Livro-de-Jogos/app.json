@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Livro-de-Jogos",
+    "slug": "Livro-de-Jogos",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
