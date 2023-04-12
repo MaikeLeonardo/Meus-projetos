@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --ff-heading: 'Staatliches' , sans-serif;
+    --ff-texting: 'Palanquin' , sans-serif;
+    
+
+    --hue:250;
+    --bg-primary: hsl(var(--hue),100%, 97%, 1);
+    --fc-textsorv:hsl(var(--hue), 17%, 35%, 1);
+
+    font-size: 62.5%;
+
+}
+body{
+    font-family: var(--ff-heading);
+
+    background-color: var(--bg-primary);
+    font-size: 1.0rem;
+    width: 384px;
+    height: 1995px;
+    left: 0;
+    top: 0;
+    bottom: 6.3rem;
+}
+
+main {
+    display: grid;
+    gap: 3.2rem;
+    animation: downtop 700ms 350ms backwards;
+    padding-bottom: 10rem;
+  }
+p{
+    font-family: var(--ff-texting);
+    width: 305px;
+    height: 7.5rem;
+    left: 3rem;
+    top: 2.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.page{
+    max-width: 32rem;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.card{
+    position: relative;
+}
+.card h2{
+    position: absolute;
+    
+}
+.card img{
+    
+    margin-bottom: 3.2rem;
+    
+}
+.page h2 span{
+    border-radius: 3rem;
+    background-color: white;
+    font-family: var(--fc-textsorv);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05rem;
+    width: 11.2rem;
+    height: 3rem;
+    top: 44rem;
+    left: 22rem;
+    display: inline-block;
+    text-align: center;
+    margin-left: 19rem;
+    margin-top: 1.6rem;
+
+}
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes downtop {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+/*@media (min-width:700px){
+    main{
+     grid-template-columns: 1fr 1fr;
+    }
+     
+     :root{
+      --fs-heading:5.6rem;
+     }
+     
+     .page{
+      max-width: 117rem;
+      padding: 0 5rem;
+     }
+    
+   }/*
+   
+   
+   @media (min-width:930px){
+   
+   }
+   main{
+     grid-template-areas: "A A B"
+     "C D D";
+   }
+   
+   main :nth-child(1){
+     grid-area: A;
+   }
+   main :nth-child(2){
+     grid-area: B;
+   }
+   
+   main :nth-child(3){
+     grid-area: C;
+   }
+   
+   main :nth-child(4){
+     grid-area: D;
+   }
+   
+   img {
+     width: 100%;
+     height: auto;
+   }
