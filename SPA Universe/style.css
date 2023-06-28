@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 62.5%;
+}
+body, button {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: #e1e1e6;
+}
+body{
+    width: 128rem;
+    margin: 0 auto;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 125%;
+}
+p {
+    font-size: 1.8rem;
+    line-height: 160%;
+    color: #e1e1e6;
+}
+a {
+    color: #8d8d99;
+    font-size: 2.2rem;
+    text-decoration: none;
+    transition: .5s;
+}
+a:active, a:hover {
+    color: #e1e1e6;
+    font-weight: 700;
+}
+header {
+    top: 4rem;
+    margin: 0rem auto auto 7.2rem;
+    background: transparent;
+    position: absolute;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3.2rem;
+}
+
+.exploracao, .home, .universo, .error {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    max-width: 128rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+.exploracao, .universo{
+    padding: 18.5rem 53rem 0 10.2rem;
+}
+
+.home, .error {
+    padding-top: 29.4rem;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.exploracao{
+    background-image: url(./assets/mountains-universe-3.png);
+}
+.home, .error {
+    background-image: url(./assets/mountains-universe-1.png);
+
+}
+
+.universo{
+    background-image: url(./assets/mountains-universe02.png);
+}
+
+#app div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    max-height: 72rem;
+}
+
+button, .error a {
+    width: 19.5rem;
+    height: 4.8rem;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    transition: .5s;
+    text-align: center;
+}
+button:hover, .error a:hover{
+    background: #ffffff;
+    color: #02799d;
+}
